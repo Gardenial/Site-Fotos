@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil do Usuário</title>
+</head>
+<!-- ... (código anterior) -->
+<body>
+    <header>
+        <a href="index.html">
+            <img src="/img/icon.png" alt="GardenPhotos" id="logo">
+          </a>
+    </header>
+    <main>
+        <div class="profile-card">
+            <img src="avatar.jpg" alt="Foto do perfil" id="profile-image">
+            <h2 id="username">Nome do Usuário</h2>
+            <p>Email: usuario@example.com</p>
+            <p>Localização: Algum lugar</p>
+            <p id="description">Descrição: Alguma descrição interessante sobre o usuário.</p>
+            <button id="edit-button">Editar Perfil</button>
+            <div id="edit-form" style="display: none;">
+                <input type="text" placeholder="Novo Nome" style="margin-top: 5px; padding: 7px;" >
+                <input type="text" placeholder="Nova Localização" style="margin-top: 5px; padding: 7px;">
+                <input type="text" placeholder="Nova descrição" style="margin-top: 5px; padding: 7px;">
+                <button id="save-button">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <div class="garden-section">
+        <h2>Meu Jardim</h2>
+        <button id="plant-Garden-button">Plantar</button>
+        <div class="overlay" id="overlay">
+            <div class="garden-form">
+                <h3>Plante a sua idéia</h3>
+                <textarea id="garden-text" placeholder="Escreva seu tweet"></textarea>
+                <input type="file" id="file-upload" accept="image/*">
+                <label for="file-upload" class="custom-file-upload" id="file-label">Escolha uma imagem</label>
+                <button id="plant-button">Plantar</button>
+                <button id="close-button">Fechar</button>
+            </div>
+        </div>
+        <div class="garden-items">
+            <!-- Tweets serão adicionados aqui dinamicamente -->
+        </div>
+    </div>
+    </main>
+    <script src="perfil.js"></script>
+</body>
+</html>
+
